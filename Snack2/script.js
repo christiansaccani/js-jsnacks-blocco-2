@@ -43,10 +43,8 @@ do {
 console.log(tentativo);
 
 if (tentativo !== 1) {
-    document.querySelector("div").innerText = `Hai indovinato il 
-    valore ${randomNumber} scelto dal computer, impiegando un totale di ${tentativo} tentativi.`
+    document.querySelector("div").innerText = `Hai indovinato il valore ${randomNumber} scelto dal computer, impiegando un totale di ${tentativo} tentativi.`
 
 } else {
-    document.querySelector("div").innerText = `Con una probanilità dell'1% hai indovinato il 
-    valore ${randomNumber} scelto dal computer al primo tentativo! WOW!`
+    document.querySelector("div").innerText = `Con una probanilità dell'1% hai indovinato il valore ${randomNumber} scelto dal computer al primo tentativo! WOW!`
 }
