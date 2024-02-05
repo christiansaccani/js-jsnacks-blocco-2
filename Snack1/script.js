@@ -8,7 +8,7 @@ let sum = 0
 while (sum<50) {
     const numberUser = +prompt("Inserisci un valore (valore totale massimo 50): ");
 
-    if( typeof numberUser === "number") {
+    if( typeof numberUser === 'number' && !Number.isNaN(numberUser)) {
 
         
         numberList.push(numberUser);
@@ -16,10 +16,11 @@ while (sum<50) {
         sum += numberUser;
 
     } else {
+
         alert("Il valore inserito non è valido");
     
     }
 }
 
 console.log(sum);
-document.querySelector("div").innerText = "Hai superato 50!"
+document.querySelector("div").innerText = `Hai superato 50! I valori da te scelti sono ${numberList} per un totale di ${sum}.`
