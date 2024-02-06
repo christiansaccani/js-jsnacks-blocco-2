@@ -15,7 +15,7 @@ let userNumber = +prompt("Indovina il valore scelto dal computer (compreso tra 1
 
 do {
 
-    if (typeof userNumber === 'number' && !Number.isNaN(userNumber) && userNumber > 0) {
+    if (!Number.isNaN(userNumber) && userNumber > 0) {
 
         tentativo++;
 
@@ -35,6 +35,7 @@ do {
     } else {
 
         alert("Il valore inserito non è valido");
+        userNumber = Number(prompt("Nuovo tentativo (compreso tra 1 e 100): "));
     
     }
 

@@ -8,7 +8,7 @@ let sum = 0
 while (sum<50) {
     const numberUser = +prompt("Inserisci un valore (valore totale massimo 50): ");
 
-    if( typeof numberUser === 'number' && !Number.isNaN(numberUser)) {
+    if(!Number.isNaN(numberUser)) {
 
         
         numberList.push(numberUser);
